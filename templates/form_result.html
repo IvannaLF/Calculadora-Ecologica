@@ -1,0 +1,18 @@
+<!DOCTYPE html> <!-- ! y enter, crea la estructura basica de un sitio web-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/style.css"> <!--Une este archivo con el archivo style. Los dos puntos, nos devuelven a la carpeta anterior-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_results</title> <!--Titulo de la pagina-->
+</head>
+<body>
+    {%block content%} <!-- Llama los resultado de la encuesta -->
+    <h1 class="result">Gracias por rellenar el formulario!</h1>
+    <p>Tu nombre: {{name}} </p> <!-- {{name}}Llama a la funcion name del form.html -->
+    <p>Tu e-mail: {{email}} </p>
+    <p>Tu dirección: {{adress}} </p>
+    <p>La fecha: {{date}} </p>
+    {%endblock%} <!-- Cerrar el block content -->
+</body>
+</html>
